@@ -14,9 +14,23 @@
     --ff-text: 'Rubik', sans-serif;
 }
 
+              
+.logo-infito{
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+   max-width: 4rem;
+   padding-top: 0;
+}
+.logo-infito:hover{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
 body {
   font-family: var(--ff-text);
-  background-color: #ffffff;
+  background-color: #141414;
 }
 
 h1, h2, h3 {
@@ -39,6 +53,7 @@ ul {
 
 .nav-list {
   display: flex;
+  color: #fff;
 }
 
 .nav-link {
@@ -63,10 +78,12 @@ ul {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-inline: 2rem;
-  padding: 80px;
+  padding: 0;
+  padding-bottom: 12em;
+  padding-top: 4em;
+
 }
 
 .main-header{
@@ -80,6 +97,16 @@ ul {
   max-width: 3em;
 }
 
+
+.content h2, a {
+  margin: 10px 0;
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+
 .quien-soy-inner {
   display: grid;
   grid-template-columns: .35fr 1fr;
@@ -89,7 +116,6 @@ ul {
       padding-block: 3rem;
       column-gap: 2em;
 }
-
 
 .foto-gonza {
   grid-area: foto;
@@ -103,62 +129,131 @@ ul {
 
 .quien-soy-title {
   grid-area: titulo;
-  font-size: 2.5em;
+  font-size: 4em;
+  color: #fff;
 }
 
 .quien-soy-text {
   grid-area: texto;
   font-size: 1.1rem;
   line-height: 1.3;
+  color: #fff;
 }
 
 .container-proyectos {
   margin: 0 auto;
   padding-inline: 2rem;
   padding: 30px;
-  background-color: #ff6600;
+  background-image: url(../img/pawel-czerwinski-BPrk2cOoCq8-unsplash.jpg);
+  padding-top: 3rem;
+  margin-top: 7rem;
 }
 
 .title-proj {
+  font-size: 3.5em;
   text-align: center;
+  color: #fff;
 }
 
 .text-proj {
-  padding: 2em;
+  padding-top: 2rem;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-align: center;
 }
 
+.contenido-card {
+  display: grid;
+}
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+  padding-bottom: 4em;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #000000;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#e6f705;
+	box-shadow: 0px 1px 10px rgb(255, 255, 255);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #000000;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #030303;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #462fcc;
+	color: #fff;
+}
 
-.tarjetitas {
-    display: flex;
-    gap: 30px;
-    padding: 40px 0px px;
-    padding-left: 9em;
-  }
-  
-  .terjeta-titulo {
-    color: #8b8888;
-  }
-  
-  .tarjeta-parrafo {
-    color: #141414;
-  }
-  
-  .tarjeta {
-    background-color: #ffffff;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  
-  .tarjeta-img {
-    width: 100%;
-    width: 300px;
-  }
+.tarjetas {
+  justify-content: center;
+
+}
+
+.text-end {
+  text-align: center;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.container-sobremi {
+  padding: 3rem;
+}
+
+.sobremi-text {
+  max-width: 500px;
+}
 
 .sobre-mi {
   padding-block: 2rem;
+  background-color: #3BAB4C;
 }
 
 
@@ -180,14 +275,18 @@ ul {
 
 .sobremi-text {
   padding-block: 1rem;
+  font-size: 20px;
+  color: rgb(255, 248, 190)
 }
 
 .sobremi-title {
   font-size: 3rem;
+  color: rgb(255, 248, 190)
 }
 
 .title-curso {
   font-size: 1.5rem;
+  color: rgb(255, 248, 190)
 }
 
 .certificado::after {
@@ -203,7 +302,7 @@ ul {
 }
 
 .certificado:hover {
-  color: #ffffff;
+  color: rgb(255, 248, 190)
 }
 
 .certificado:hover::after {
@@ -214,24 +313,55 @@ ul {
   padding: 20px;
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .social i {
   font-size: 3rem;
   color: #ffffff;
+  justify-content: center;
+}
+
+.social i:hover {
+  transition: .3s;
+  color: #ff6600;
+}
+
+
+.container-footer {
+  padding: 3rem;
+  
 }
 
 .footer {
   background-color: #141414;
   padding-top: 50px;
-  width: 100%;
+  justify-content: center;
+}
+
+.div-footer {
+  border-top: 3px solid #ff6600;
 }
 
 .title-footer {
   font-size: 3rem;
   color: #ffffff;
+  text-align: center;
 }
 
 .text-footer {
   color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.title-footer{
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+.title-footer:hover{
+  transform: translatey(-20px);
+      -webkit-transform: translatey(-20px);
+      -moz-transform: translatey(-20px);
 }
