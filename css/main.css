@@ -252,7 +252,7 @@ ul {
 
 .sobre-mi {
   padding-block: 2rem;
-  background-color: #3BAB4C;
+  background-color: #462fcc;
 }
 
 
@@ -275,17 +275,17 @@ ul {
 .sobremi-text {
   padding-block: 1rem;
   font-size: 15px;
-  color: rgb(255, 248, 190)
+  color: rgb(255, 255, 255)
 }
 
 .sobremi-title {
   font-size: 2.5rem;
-  color: rgb(255, 248, 190)
+  color: rgb(255, 255, 255)
 }
 
 .title-curso {
   font-size: 1.5rem;
-  color: rgb(255, 248, 190)
+  color: rgb(255, 255, 255)
 }
 
 .certificado::after {
