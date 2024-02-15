@@ -30,15 +30,11 @@
 
 body {
   font-family: var(--ff-text);
-  background-color: #141414;
+  background-color: #046457;
 }
 
 h1, h2, h3 {
   font-family: var(--ff-title);
-}
-
-.logo-gonza {
-  font-size: 1.5em;
 }
 
 a {
@@ -49,6 +45,7 @@ a {
 ul {
   list-style-type: none;
   gap: 2em;
+  font-size: 15px;
 }
 
 .nav-list {
@@ -78,11 +75,12 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 990px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 12em;
+  padding-bottom: 4em;
   padding-top: 4em;
+
 
 }
 
@@ -129,7 +127,7 @@ ul {
 
 .quien-soy-title {
   grid-area: titulo;
-  font-size: 4em;
+  font-size: 3em;
   color: #fff;
 }
 
@@ -146,11 +144,12 @@ ul {
   padding: 30px;
   background-image: url(../img/pawel-czerwinski-BPrk2cOoCq8-unsplash.jpg);
   padding-top: 3rem;
-  margin-top: 7rem;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
 }
 
 .title-proj {
-  font-size: 3.5em;
+  font-size: 2em;
   text-align: center;
   color: #fff;
 }
@@ -160,7 +159,7 @@ ul {
   color: #fff;
   width: 600px;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -275,12 +274,12 @@ ul {
 
 .sobremi-text {
   padding-block: 1rem;
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(255, 248, 190)
 }
 
 .sobremi-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(255, 248, 190)
 }
 
@@ -317,7 +316,7 @@ ul {
 }
 
 .social i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ffffff;
   justify-content: center;
 }
@@ -344,14 +343,14 @@ ul {
 }
 
 .title-footer {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ffffff;
   text-align: center;
 }
 
 .text-footer {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
 }
 
