@@ -21,7 +21,7 @@
 
 .section {
   display: flex;
-  padding: 6em;
+  padding: 5em;
   gap: 4em;
   justify-content: center;
 }     
@@ -32,8 +32,8 @@
 
 .img-gonzalo {
   max-width: 280px;
-  border-radius: 30px;
   padding-bottom: 6em;
+  overflow: hidden;
 }
 
 .titulo-home {
@@ -166,6 +166,8 @@ ul {
   color: #fff;
 }
 
+/*  PROYECTOS  */
+
 .container-proyectos {
   margin: 0 auto;
   padding-inline: 2rem;
@@ -258,17 +260,14 @@ ul {
 	color: #fff;
 }
 
-.tarjetas {
-  justify-content: center;
-
-}
-
 .text-end {
   text-align: center;
   font-family: 'Dela Gothic One', sans-serif;
   font-size: 1.5em;
   color: #fff;
 }
+
+/*  SOBRE MI  */
 
 .container-sobremi {
   padding: 3rem;
@@ -280,6 +279,7 @@ ul {
   display: flex;
   gap: 8em;
   justify-content: center;
+  border-bottom: 3px solid rgb(55, 0, 255);
 }
 .sobremi-text {
   max-width: 500px;
@@ -288,11 +288,6 @@ ul {
 .sobre-mi {
   padding-block: 2rem;
   background-color: #1c1c1c
-}
-
-.title-skills {
-  text-align: center;
-  color: #ffffff;
 }
 
 .certificado {
@@ -345,6 +340,188 @@ ul {
   height: 100%;
 }
 
+.mis-cursos {
+  padding-bottom: 5em;
+}
+
+/*  SKILLS  */
+
+.title-skills {
+  text-align: center;
+  color: #ffffff;
+}
+
+.row {
+  justify-content: center;
+}
+
+.container .main-title{
+	max-width: 700px;
+	margin: 0px auto;
+	text-align: center;
+	font-family: helvetica;
+}
+.container .main-title h1{
+	position: relative;
+	font-size: 40px;
+	color: #ffffff;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.container .main-title h1::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: #ffffff;
+}
+.container .main-title h1::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	background-color: rgb(55, 0, 255);
+	top: calc(125% - 1px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main-title p{
+	color: #ffffff;
+}
+.container .row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+  justify-content: center;
+}
+.row .col{
+	flex-basis: 46%;
+}
+.row .sub-title h2{
+	position: relative;
+	color: #ffffff;
+	font-size: 22px;
+	font-family: helvetica;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.row .sub-title h2::before{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: #808080;
+}
+.row .sub-title h2::after{
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 3px;
+	top: calc(125% - 1px);
+	left: 0;
+	background-color: rgb(55, 0, 255);
+}
+.subject{
+	font-size: 18px;
+	font-weight: thin;
+	color: #808080;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.subject:hover {
+  color: #ffffff;
+  transition: .2s;
+}
+.progress-bar{
+	position: relative;
+	width: 100%;
+	height: 5px;
+	background-color: #808080;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.progress-bar::after{
+	position: absolute;
+	content: attr(value);
+	top: -35px;
+	right: 0;
+	color: #808080;
+	font-size: 18px;
+}
+.progress-line{
+	position: absolute;
+	width: 0%;
+	height: 7px;
+	background-color: rgb(55, 0, 255);
+	border-radius: 15px;
+	top: -1px;
+	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate{
+	100%{
+		width: 100%;
+	}
+}
+.progress-line::after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	background-color: #826cfc;
+}
+@media(max-width: 768px){
+	.container{
+		padding: 30px 8%;
+	}
+}
+@media(max-width: 568px){
+	.container .row{
+		flex-direction: column;
+	}
+	.container .main-title h1{
+		font-size: 36px;
+	}
+	.container .row{
+		margin-top: 30px;
+	}
+	.row .col:nth-child(2){
+		margin-top: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER  */
+
 .social {
   padding: 20px;
   display: flex;
@@ -360,7 +537,7 @@ ul {
 
 .social i:hover {
   transition: .3s;
-  color: rgb(55, 0, 255);
+  color: rgb(70, 19, 252);
 }
 
 
@@ -401,6 +578,8 @@ ul {
       -webkit-transform: translatey(-20px);
       -moz-transform: translatey(-20px);
 }
+
+/* Responsive */ 
 
 @media only screen and (max-width: 600px) {
 
