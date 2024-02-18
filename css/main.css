@@ -9,28 +9,56 @@
   text-decoration: none;
 }
 
+
+
+.log {
+  color: #fff;
+  font-size: 25px;
+}
+
 :root {
     --ff-title: 'Dela Gothic One', sans-serif;
     --ff-text: 'Rubik', sans-serif;
 }
 
-              
-.logo-infito{
-  transition: .5s, color .10s;
-  -webkit-transition: .5s, color .10s;
-  -moz-transition: .5s, color .10s;
-   max-width: 4rem;
-   padding-top: 0;
+.section {
+  display: flex;
+  padding: 6em;
+  gap: 4em;
+  justify-content: center;
+}     
+
+.home {
+  padding-top: 4em;
 }
-.logo-infito:hover{
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
+
+.img-gonzalo {
+  max-width: 350px;
+  border-radius: 30px;
+  padding-bottom: 6em;
+
+}
+
+.titulo-home {
+  color: #6a1bff;
+  font-size: 3em;
+}
+
+.titulo2-home {
+  color: #ac84fc;
+  font-size: 1em;
+  font-family: var(--ff-text);
+  padding-bottom: 7px;
+}
+
+.parrafo-home {
+  color: #ffffff;
+  max-width: 550px;
 }
 
 body {
   font-family: var(--ff-text);
-  background-color: #046457;
+  background-color: #1c1c1c
 }
 
 h1, h2, h3 {
@@ -51,6 +79,7 @@ ul {
 .nav-list {
   display: flex;
   color: #fff;
+  padding-top: 1em;
 }
 
 .nav-link {
@@ -64,7 +93,7 @@ ul {
   right: 0;
   top: 100%;
   height: 2px;
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(55, 0, 255);
   transform: scaleX(0);
   transition: .2s;
 }
@@ -81,14 +110,15 @@ ul {
   padding-bottom: 4em;
   padding-top: 4em;
 
-
 }
 
 .main-header{
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding-right: 6em;
+  padding-left: 6em;
   padding-bottom: 0;
+  padding-top: 1.5em;
 }
 
 .logo {
@@ -119,6 +149,7 @@ ul {
   grid-area: foto;
   max-width: 300px;
   border-radius: 10px;
+  border: 3px solid rgb(55, 0, 255);
 }
 
 .foto-gonza img {
@@ -128,7 +159,7 @@ ul {
 .quien-soy-title {
   grid-area: titulo;
   font-size: 3em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .quien-soy-text {
@@ -142,10 +173,10 @@ ul {
   margin: 0 auto;
   padding-inline: 2rem;
   padding: 30px;
-  background-image: url(../img/pawel-czerwinski-BPrk2cOoCq8-unsplash.jpg);
+  background-color: #1c1c1c;
   padding-top: 3rem;
-  border-top: 3px solid #ff6600;
-  border-bottom: 3px solid #ff6600;
+  border-top: 3px solid rgb(55, 0, 255);
+  border-bottom: 3px solid rgb(55, 0, 255);
 }
 
 .title-proj {
@@ -187,7 +218,7 @@ ul {
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#e6f705;
+	background:rgb(55, 0, 255);
 	box-shadow: 0px 1px 10px rgb(255, 255, 255);
 	transition: all 400ms ease-out;
 	cursor: default;
@@ -206,11 +237,11 @@ ul {
 }
 .card .contenido-card h3{
 	margin-bottom: 15px;
-	color: #000000;
+	color: #ffffff;
 }
 .card .contenido-card p{
 	line-height: 1.8;
-	color: #000000;
+	color: #ffffff;
 	font-size: 14px;
 	margin-bottom: 5px;
 }
@@ -219,14 +250,14 @@ ul {
 	padding: 10px;
 	margin-top: 10px;
 	text-decoration: none;
-	color: #030303;
-	border: 1px solid #000000;
+	color: #ffffff;
+	border: 1px solid #fff6f6;
 	border-radius: 4px;
 	transition: all 400ms ease;
 	margin-bottom: 5px;
 }
 .card .contenido-card a:hover{
-	background: #462fcc;
+	background: #070707;
 	color: #fff;
 }
 
@@ -252,9 +283,11 @@ ul {
 
 .sobre-mi {
   padding-block: 2rem;
-  background-color: #462fcc;
+  background-color: #1c1c1c
 }
 
+.skills {
+}
 
 .certificado {
   padding: .5rem 1rem;
@@ -263,13 +296,11 @@ ul {
   gap: .5rem;
   position: relative;
   isolation: isolate;
+  color: #fff;
 }
 
 .btns {
   display: flex;
-}
-.section-inner {
-  align-items: start;
 }
 
 .sobremi-text {
@@ -295,13 +326,13 @@ ul {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: black;
+  background-color: rgb(55, 0, 255);
   transition: .2s;
   z-index: -1;
 }
 
 .certificado:hover {
-  color: rgb(255, 248, 190)
+  color: rgb(255, 255, 255)
 }
 
 .certificado:hover::after {
@@ -323,7 +354,7 @@ ul {
 
 .social i:hover {
   transition: .3s;
-  color: #ff6600;
+  color: rgb(55, 0, 255);
 }
 
 
@@ -333,13 +364,13 @@ ul {
 }
 
 .footer {
-  background-color: #141414;
+  background-color: #1c1c1c;
   padding-top: 50px;
   justify-content: center;
 }
 
 .div-footer {
-  border-top: 3px solid #ff6600;
+  border-top: 3px solid rgb(55, 0, 255);
 }
 
 .title-footer {
@@ -363,4 +394,18 @@ ul {
   transform: translatey(-20px);
       -webkit-transform: translatey(-20px);
       -moz-transform: translatey(-20px);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .quien-soy-title {
+    font-size: 2em;
+  }
+
+  .quien-soy-text {
+    font-size: small;
+  }
+  .container-card {
+    display: grid;
+  }
 }

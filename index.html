@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,40 +8,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="./img/pawel-czerwinski-BPrk2cOoCq8-unsplash.jpg">
     <title>Gonzalo Bottone</title>
-
 </head>
-<body>
+<body class="hidden">
     <header class="main-header">
-      <img class="logo-infito" src="./img/infinito2.png" alt="">
+      <h1 class="log">Porfolio</h1>
       <nav class="nav-bar">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="quien-soy">Quien soy</a></li>
-          <li class="nav-item"><a class="nav-link" href="proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre-mi">Sobre mi</a></li>
-          <li class="nav-item"><a class="nav-link" href="Contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inico">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
-
       </nav>
     </header>
     <main>
-        <section id="quien-soy"class="section">
-            <div class="container">
-                <div class="quien-soy-inner">
-                    <img class="foto-gonza" src="./img/foto-logo.jpeg" alt="">
-                    <h1 class="quien-soy-title">Hola me llamo Gonza y Soy Desarrollador web</h1>
-
-                    <p class="quien-soy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Deserunt quos odit, dolores perferendis consectetur illo 
-                        quae, odio voluptates natus, vitae ad! Est laborum nemo 
-                        amet asperiores facilis, numquam porro enim sint animi 
-                        dolorem repellendus qui itaque optio nesciunt, reiciendis 
-                        mollitia omnis impedit aliquam nisi consequatur praesentium 
-                        dignissimos! Sapiente, mollitia rerum!
-                      </p>
-                </div>
-            </div>
+        <section id="#inicio"class="section">
+          <div class="home">
+            <h1 class="titulo-home" class="">Hola!, soy Gonzalo</h1>
+            <h2 class="titulo2-home">Frontend Developer</h2>
+            <p class="parrafo-home">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quod incidunt similique 
+              maxime odit maiores, veritatis alias fuga debitis recusandae rem eum aliquam eius facere 
+              cupiditate nam corrupti! Est, impedit.</p>
+          </div>
+          <div class="div-img">
+            <img class="img-gonzalo" src="./img/foto-logo.jpeg" alt="">
+          </div>
         </section>
-        <div class="container-proyectos">
+        <div class="container-proyectos" id="#proyectos">
           <h1 class="title-proj">MIS PROYECTOS</h1>
         <p class="text-proj">Durante mi formacion como futuro Front-End Developer realice algunos proyectos</p>
         <div class="title-cards">
@@ -82,7 +76,7 @@
         </div>
          <section class="sobre-mi" id="sobre mi">
           <div class="container-sobremi">
-            <div class="section-inner">
+            <div class="section-inner" id="#sobre-mi">
               <h2 class="sobremi-title">SOBRE MI</h2>
               <p class="sobremi-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Aliquid adipisci ut quidem dicta culpa, distinctio sequi 
@@ -102,12 +96,16 @@
                 </div>
             </div>
           </div>
+          <div class="skills">
+            <h1>SKILLS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fu?</p>
+          </div>
          </section>
 
     </main>
     <div class="div-footer">
       <footer class="footer">
-        <div class="container-footer">
+        <div class="container-footer" id="#contacto">
           <h1 class="title-footer">Contacto</h1>
           <p class="text-footer">Si estas interesado en mi trabajo o queres contactarme podes encontrarme en...</p>
           <div class="social">
@@ -119,5 +117,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
