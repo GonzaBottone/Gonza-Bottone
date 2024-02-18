@@ -9,8 +9,6 @@
   text-decoration: none;
 }
 
-
-
 .log {
   color: #fff;
   font-size: 25px;
@@ -33,14 +31,13 @@
 }
 
 .img-gonzalo {
-  max-width: 350px;
+  max-width: 280px;
   border-radius: 30px;
   padding-bottom: 6em;
-
 }
 
 .titulo-home {
-  color: #6a1bff;
+  color: #5900ff;
   font-size: 3em;
 }
 
@@ -276,7 +273,14 @@ ul {
 .container-sobremi {
   padding: 3rem;
 }
-
+.foto-sobre-mi {
+  max-width: 300px;
+}
+.section-inner {
+  display: flex;
+  gap: 8em;
+  justify-content: center;
+}
 .sobremi-text {
   max-width: 500px;
 }
@@ -286,7 +290,9 @@ ul {
   background-color: #1c1c1c
 }
 
-.skills {
+.title-skills {
+  text-align: center;
+  color: #ffffff;
 }
 
 .certificado {
