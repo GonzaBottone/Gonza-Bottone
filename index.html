@@ -10,17 +10,20 @@
     <title>Gonzalo Bottone</title>
 </head>
 <body class="hidden">
-    <header class="main-header">
-      <h1 class="log">Porfolio</h1>
-      <nav class="nav-bar">
+  <header>
+    <p class="log">Porfolio</p>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#inico">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li><a class="nav-link" href="#">Inicio</a></li>
+            <li><a class="nav-link" href="##proyectos">Proyectos</a></li>
+            <li><a class="nav-link" href="##sobre-mi">Sobre mi</a></li>
+            <li><a class="nav-link" href="##skills">Skills</li>
+            <li><a class="nav-link" href="##contacto">Contacto</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
     <main>
         <section id="#inicio"class="section">
           <div class="home">
@@ -41,7 +44,7 @@
               </div>
           </div>
           <div class="div-img">
-            <img class="img-gonzalo" src="./img/gonza-rosa.jpeg" alt="">
+            <img class="img-gonzalo" src="./img/gonza.rosa.jpg" alt="">
           </div>
         </section>
         <div class="container-proyectos" id="#proyectos">
@@ -84,34 +87,38 @@
       </div>
       <p class="text-end">PROXIMAMANTE MAS..</p>
         </div>
-         <section class="sobre-mi" id="sobre mi">
+         <section class="sobre-mi">
           <div class="container-sobremi">
             <div class="section-inner" id="#sobre-mi">
-              <div>
-                <span class="btn">SOBRE MI </span>
-              <p class="sobremi-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Aliquid adipisci ut quidem dicta culpa, distinctio sequi 
-                non eum facere veritatis blanditiis eius possimus officia 
-                enim odio exercitationem rem in. Natus! Lorem, ipsum dolor sit amet consectetur 
-                adipisicing elit. Quidem dolore, veniam aut harum in autem dolorum. A illum vel 
-                labore nisi, fugiat ea repellendus, nulla earum, nostrum consectetur sequi ex.</p>
-                <div class="mis-cursos">
-                  <h3 class="title-curso">Curso Desarrollo Web</h3>
-                  <div class="btns">
-                    <a target="_blank" class="certificado" href="https://www.coderhouse.com/certificados/650ab27c5c2fe32ca5aeca6f?lang">Certificado <i class="bi bi-box-arrow-up-right"></i></a>
+              <div data-aos="fade-right">
+                <div>
+                  <span class="btn">SOBRE MI </span>
+                <p class="sobremi-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                  Aliquid adipisci ut quidem dicta culpa, distinctio sequi 
+                  non eum facere veritatis blanditiis eius possimus officia 
+                  enim odio exercitationem rem in. Natus! Lorem, ipsum dolor sit amet consectetur 
+                  adipisicing elit. Quidem dolore, veniam aut harum in autem dolorum. A illum vel 
+                  labore nisi, fugiat ea repellendus, nulla earum, nostrum consectetur sequi ex.</p>
+                  <div class="mis-cursos">
+                    <h3 class="title-curso">Curso Desarrollo Web</h3>
+                    <div class="btns">
+                      <a target="_blank" class="certificado" href="https://www.coderhouse.com/certificados/650ab27c5c2fe32ca5aeca6f?lang">Certificado <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                    <h3 class="title-curso">Curso JavaScrip</h3>
+                    <div class="btns">
+                      <a target="_blank" class="certificado" href="https://www.coderhouse.com/certificados/6585da8ccb41d84c3334f73c?lang">Certificado <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
                   </div>
-                  <h3 class="title-curso">Curso JavaScrip</h3>
-                  <div class="btns">
-                    <a target="_blank" class="certificado" href="https://www.coderhouse.com/certificados/6585da8ccb41d84c3334f73c?lang">Certificado <i class="bi bi-box-arrow-up-right"></i></a>
-                  </div>
-                </div>
-            </div>
+              </div>
+                  
+              </div>
             <div>
               <div>
                 <img  class="foto-sobre-mi" src="./img/foto-logo.jpeg" alt="">
               </div>
             </div>
           </div>
+        </section>
           <div class="container">
             <div class="main-title">
               <h1>Skills</h1>
@@ -127,7 +134,7 @@
           
                 <div class="skills-container">
                   
-                  <div class="skill">
+                  <div class="skill" id="#skills">
                     <div class="subject">HTML</div>
                     <div class="progress-bar" value="94%">
                       <div class="progress-line" style="max-width: 94%"></div>
@@ -149,7 +156,6 @@
                   </div>
             </div>
               </div>
-         </section>
 
     </main>
     <div class="div-footer">
