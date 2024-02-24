@@ -13,8 +13,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  background-color: #1c1c1c;
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid#3500f7;
 }
 
 .nav-list {
@@ -58,7 +58,7 @@ header {
 .img-gonzalo {
   max-width: 280px;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 10px 40px;
 }
 
 * {
@@ -388,7 +388,8 @@ h1, h2, h3 {
 
 .sobre-mi {
   padding-block: 2rem;
-  background-color: #1c1c1c
+  background-color: #1c1c1c;
+  max-width: 100%;
 }
 
 .certificado {
@@ -700,11 +701,25 @@ h1, h2, h3 {
 }
 
 @media(max-width: 768px){
+
+  .titulo-gonza {
+    font-size: 1em;
+  }
+
 	.container{
 		padding: 30px 8%;
 	}
+
+  .sobre-mi {
+    max-width: 100%;
+  }
+
 }
 @media(max-width: 568px){
+
+  .titulo-gonza {
+    font-size: 1em;
+  }
 	.container .row{
 		flex-direction: column;
 	}
