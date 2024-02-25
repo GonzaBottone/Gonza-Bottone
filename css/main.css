@@ -792,7 +792,23 @@ h1, h2, h3 {
   }
 }
 
+@media only screen and (max-width: 535px) {
+  .btn {
+    font-size: 1.9em;
+  }
+
+  .card {
+    max-width: 360px;
+  }
+
+}
+
 @media(max-width: 768px){
+
+  .container-card {
+    display: grid;
+    max-width: 400px;
+  }
 
   .titulo-gonza {
     font-size: 1em;
