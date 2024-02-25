@@ -170,7 +170,7 @@ button:hover .button-text {
 #texto {
   font-size: 3.3em;
   font-family: var(--ff-title);
-  color: #5900ff;
+  color: #3500f7;
 }
 
 .letra-hover:hover {
@@ -652,16 +652,18 @@ h1, h2, h3 {
 
 /* Responsive */ 
 
+@media screen and (max-width: 470px) {
+  #texto {
+    font-size: 1.5em;
+  }
+
+}
+
 @media screen and (max-width: 550px) {
   .div-img {
     max-width: 200px;
-    margin-left: 2em;
-    margin-right: 2em;
   }
 
-  .img-gonzalo {
-    max-width: 300px;
-  }
   .section {
     padding-bottom: 6em;
     display: flex;
