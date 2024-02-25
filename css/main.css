@@ -424,7 +424,7 @@ h1, h2, h3 {
 .sobremi-text {
   padding-block: 1rem;
   padding-top: 2em;
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(255, 255, 255);
   max-width: 500px;
 }
@@ -656,6 +656,12 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 550px) {
+  header {
+    margin-bottom: 2em;
+  }
+  .container-card {
+    padding: 1.5em;
+  }
   .div-img {
     align-self: center;
   }
@@ -774,7 +780,6 @@ h1, h2, h3 {
 
   .container-card {
     padding-top: 2em;
-    max-width: 430px;
   }
 }
 
@@ -794,10 +799,6 @@ h1, h2, h3 {
 @media only screen and (max-width: 535px) {
   .btn {
     font-size: 1.9em;
-  }
-
-  .card {
-    max-width: 360px;
   }
 
 }
