@@ -653,19 +653,16 @@ h1, h2, h3 {
 /* Responsive */ 
 
 @media screen and (max-width: 470px) {
-  #texto {
-    font-size: 1.5em;
-  }
-
 }
 
 @media screen and (max-width: 550px) {
   .div-img {
-    max-width: 200px;
+    align-self: center;
   }
 
   .section {
     padding-bottom: 6em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
   }
