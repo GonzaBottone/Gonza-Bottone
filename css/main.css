@@ -33,6 +33,21 @@ header {
   display: none;
 }
 
+.parrafo-home {
+  grid-area: parrafo;
+}
+.img-gonzalo {
+  grid-area: foto;
+}
+
+.titulo2-home {
+  grid-area: titulo2;
+}
+
+.titulo-gonza {
+  grid-area: titulo;
+}
+
 .log {
   color: #fff;
   font-size: 25px;
@@ -374,8 +389,9 @@ h1, h2, h3 {
   }
 
 .container-sobremi {
-  padding: 3rem;
+  padding: 3em;
 }
+
 .foto-sobre-mi {
   max-width: 300px;
 }
@@ -383,7 +399,6 @@ h1, h2, h3 {
   padding-top: 1em;
   display: flex;
   gap: 8em;
-  justify-content: center;
 }
 
 .sobre-mi {
@@ -638,6 +653,79 @@ h1, h2, h3 {
 /* Responsive */ 
 
 @media screen and (max-width: 550px) {
+  .div-img {
+    max-width: 200px;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .img-gonzalo {
+    max-width: 300px;
+  }
+  .section {
+    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titulo"
+        "titulo2"
+        "foto"
+        "parrafo";
+  }
+
+  #container {
+    padding-bottom: 0;
+  }
+
+  .home {
+    padding-top: 0;
+  }
+
+  #texto {
+    font-size: 2em;
+  }
+
+  .btn {
+    font-size: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+
+  .section-inner {
+    gap: 0;
+  }
+
+  .text-proj {
+    max-width: 400px;
+  }
+
+  .sobre-mi {
+    display: grid;
+  }
+  .sobremi-text {
+    text-align: center;
+  }
+
+  .mis-cursos {
+    text-align: center;
+  }
+
+  .div-sobre-mi {
+    justify-content: center;
+  }
+
+  .container-sobremi {
+    padding: 3em;
+  }
+
   .abrir-menu,
   .cerrar-menu {
       display: block;
@@ -684,10 +772,14 @@ h1, h2, h3 {
   .nav-list li a {
       color: #ecececec;
   }
+
+  .container-card {
+    padding-top: 2em;
+    max-width: 430px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
   .quien-soy-title {
     font-size: 2em;
   }
@@ -696,7 +788,7 @@ h1, h2, h3 {
     font-size: small;
   }
   .container-card {
-    display: grid;
+    display: grid
   }
 }
 
