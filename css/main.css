@@ -288,7 +288,6 @@ h1, h2, h3 {
 	color: #000000;
 }
 .card{
-	width: 100%;
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
@@ -661,6 +660,7 @@ h1, h2, h3 {
   }
   .container-card {
     padding: 1.5em;
+    padding-top: 2em;
   }
   .div-img {
     align-self: center;
@@ -777,10 +777,6 @@ h1, h2, h3 {
   .nav-list li a {
       color: #ecececec;
   }
-
-  .container-card {
-    padding-top: 2em;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -807,7 +803,8 @@ h1, h2, h3 {
 
   .container-card {
     display: grid;
-    max-width: 400px;
+    max-width: 390px;
+    margin: 0 auto;
   }
 
   .titulo-gonza {
@@ -840,4 +837,11 @@ h1, h2, h3 {
 	.row .col:nth-child(2){
 		margin-top: 20px;
 	}
+}
+
+@media screen and (max-width: 550px) {
+  .btn {
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
