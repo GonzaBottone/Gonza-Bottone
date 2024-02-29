@@ -599,6 +599,10 @@ h1, h2, h3 {
 	background-color: #826cfc;
 }
 
+.parrafo-skills {
+  font-family: var(--ff-text);
+}
+
 
 /*  FOOTER  */
 
