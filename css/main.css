@@ -683,7 +683,7 @@ h1, h2, h3 {
 }
 
 .parrafo-footer {
-  color: #fff;
+  color: #aaaaaa;
   padding-top: 1em;
 }
 
@@ -721,7 +721,7 @@ h1, h2, h3 {
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
-  color: #ffffff;
+  color: #aaaaaa;
   transition: all .5s  ease;
   font-size: 30px;
 
